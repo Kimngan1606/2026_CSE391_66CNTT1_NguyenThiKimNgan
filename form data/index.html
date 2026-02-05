@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <html>
+<style>
+    .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.form-row label {
+  width: 140px;       
+  font-weight: bold;
+}
+
+.form-row input {
+  width: 1300px;  
+  height: 26px;
+}
+.no-border {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+</style>
+ <body>
+ <h2>Basic Info</h2> 
+ <hr/>
+<form action="/action_page.php"> 
+ <div class="form-row">  
+<lable for="Eid"><b>Employee ID</b></label>
+<input type="number" id="Eid" name="Eid" value="9" class="no-border"><br>
+</div> 
+<div class="form-row"></div>
+<label for="Lname"><b>Last Name</b></label>
+<input type="text" id="Lname" name="Lname"value="Dodsworth"class="no-border"><br> 
+</div> 
+<div class="form-row">
+    <label for="Fname"><b>First Name</b></label>
+    <input type="text" id="Fname"name="Fname"value="Anne"><br>
+</div>
+ <p><b>Gender</b></p> 
+<input type="radio" id="Male"name="Gender"value="Male">
+<label for="Male"><b>Male</b></label>
+<br><input type="radio" id="Female"name="Gender"value="Female">
+<label for="Female"><b>Female</b></label>
+<br><input type="radio" id="XXX"name="Gender"value="XXX">
+<label for="XXX"><b>XXX</b></label>
+<br><input type="radio" id="ZZZ"name="Gender"value="ZZZ">
+<label for="ZZZ"><b>ZZZ</b></label><br>
+<div class="form-row">
+<label for="Title"><b>Title</b></label>
+<input type="text" id="Title"name="Title"value="Sales Representative"><br>
+</div>
+<div class="form-row">
+<label for="Suffix"><b>Suffix</b></label>
+<input type="text" id="Suffix"name="Suffix"value="Ms."><br> 
+</div>
+<div class="form-row">
+<label for="BDate"><b>BirthDate</b></label>
+<input type="datetime-local" id="Bdate"name="Bdate"value="1969-07-02 00:00:00"><br>
+</div>
+<div class="form-row">
+<label for="HDate"><b>HireDate</b></label>
+<input type="datetime-local" id="Hdate"name="Hdate"value="1994-11-15 00:00:00"><br>
+</div>
+<div class="form-row">
+<label for="SSN"><b>SSN # (if applicable)</b></label>
+<input type="text" id="SSN"name="SSN"value="">
+</div>
+<br><label for="Reports To"><b>Reports To</b></label>
+ <select>
+    <optgroup label="Reports To">
+        <option>Buchanan</option>
+        <option>Mina Sue</option>
+        <option>Lisa</option> 
+        <option>Rosé</option>
+    </optgroup>
+</select> 
+<h2>Contact Info</h2>
+<hr/>
+<div class="form-row">
+<label for="Email"><b>Email</b></label>
+<input type="email" id="Email"name="Email"placeholder="name@example.com "value=""><br>
+</div>
+<div class="form-row">
+<label for="Address"><b>Address</b></label>
+<input type="text" id="Address"name="Address"value="7 Houndstooth Rd."><br>
+</div>
+ <div class="form-row">
+<label for="City"><b>City</b></label>
+<input type="text" id="City"name="City"value="London"><br>
+</div>
+<div class="form-row">
+<label for="Region"><b>Region</b></label>
+<input type="text" id="Region"name="Region"value=""><br>
+</div>
+<div class="form-row">
+<label for="PC"><b>Postal Code</b></label>
+<input type="text" id="PC"name="PC"value="WG2 7LT"><br>
+</div>
+<label for="Country"><b>Country</b></label>
+ <select>
+    <optgroup label="Country">
+        <option>Russian Federation</option>
+        <option>Japan</option>
+        <option>China</option> 
+        <option>VietNam</option>
+    </optgroup>
+</select> 
+<div class="form-row">
+<br><label for="UHP"><b>US Home Phone</b></label>
+<input type="tel" id="UHP"name="UHP"value="(234)234-2342"><br>
+</div>
+<div class="form-row">
+<label for="Photo"><b>Photo</b></label>
+<input type="file"src="img_submit.gif" alt="Submit" width="48" height="48">
+</div>
+<h2>Optional Info</h2>
+<hr/>
+<div class="form-row">
+<label for="Notes"><b>Notes</b></label>
+<fieldset>
+    <textarea name="message"rows="5"cols="175">Anne has a BA degree in English from St.Lawrence College.She is fluent in French anhd German.ZZZ </textarea>
+</fieldset>
+</div>
+<p><b>Preferred Shift </b> </p> 
+<input type="checkbox" id="PS" name="PS" value="P">
+<label for="PS"><b>regular</b></label><br>
+<input type="checkbox" id="PS1" name="PS1" value="P">
+<label for="PS1"><b>Gravy Yard</b></label><br>
+<p><b>Active</b></p>
+<label for="A"></label>
+<input type="checkbox" id="A" name="A" value="a">
+<div class="form-row">
+<br><label for="captcha"><b>Are you human?</b></label>
+<label for="captcha"><b>Click to change</b> </label><br>
+<input type="text" id="captcha" name="captcha"value=""><br>
+</div>
+<hr/>
+<div class="form-actions">
+<input type="submit"value="submit"/><br>
+<input type="reset"value="cancel"><br>
+</div>
+<p>*required</p>
+</form> 
+</body>
+</html>
