@@ -1,0 +1,43 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#f2f2f2, #e6e6e6);
+    margin:0;
+}
+.wireframe{
+    padding:80px 100px;
+}
+.wireframe h2{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:60px;
+}
+.content{
+    display:flex;
+    gap:60px;
+    align-items: flex-start;
+}
+.card{
+    background:white;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,o,0.1);
+}
+.card h3{
+    margin-top:0;
+}
+.card span{
+    color:#4a90e2;
+    font-size: 14px;
+}
+.text{
+    flex:1;
+    line-height:1.7;
+}
+.bold{
+    font-weight:bold;
+}
+

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+}
+header {
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin:0;
+    padding:0;
+}
+nav ul li a {
+    text-decoration: none;
+    color:yellow;
+    font-weight:bold;
+}
+
+#page-logo a{
+    font-family: 'Oleo Script', cursive;
+    color:rgb(246, 246, 149);
+    text-decoration: none;
+    font-size: 28px;
+}
+#hero {
+    height: 100vh;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background: url("ocean.jpg") center/cover no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero h1 {
+    font-size: 48px;
+}
+#hero h1,
+#hero p {
+    color: white;
+}
+#hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: yellow;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#highlights {
+    background: #dff4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.places {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.place img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    background: black;
+    text-align: center;
+    padding: 20px;
+    justify-content:center;
+}
+footer ul {
+    list-style: none;       
+    padding: 0;              
+    margin: 0;
+    display: flex;         
+    justify-content: center; 
+    gap: 30px;
+}               
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+#destinations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    .destination strong {
+    color: rgb(41, 216, 167);
+    list-style: none;
+    padding: 0;
+}
+.destination {
+    text-align: center;
+}
+}
+.destination img {
+    width: 250px;
+    height:180px;
+    object-fit:cover;
+    border-radius: 8px;
+}
