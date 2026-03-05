@@ -406,7 +406,6 @@ Hãy chụp các ảnh màn hình:
 4. Khi gõ tên và nhìn thấy lời chào xuất hiện.
 
 *(Ảnh có thể được yêu cầu nộp cùng bài hoặc dán vào báo cáo)*
-
 ---
 
 ## 6. KẾT THÚC (15’): GIỚI THIỆU JQUERY \& PHẢN TƯ
@@ -428,22 +427,21 @@ $("#btnHello").on("click", function () {
 ```
 
 > Câu hỏi:
-> - Điểm giống nhau về chức năng giữa 2 đoạn code trên là gì?
-> - Điểm khác nhau về cú pháp là gì (`document.getElementById` vs `$("#id")`, `addEventListener` vs `.on`)?
+> - Điểm giống nhau về chức năng giữa 2 đoạn code trên là gì? khi người dùng click vào nút có id"btnHello"thì sẽ hiển thị 1 hộp thông báo alert với nội dung tương ứng
+> - Điểm khác nhau về cú pháp là gì (`document.getElementById` vs `$("#id")`, `addEventListener` vs `.on`)?js thuần dùng API DOM mặc định phải gọi thẳng để lấy phần tử còn jQuery dùng selector giống css ngắn gọn hơn và có thể thao tác nhiều phần tử cùng lúc
 > - Em hãy tra cứu nhanh “What is jQuery used for?” và ghi 2 ý chính:
->   1. ................................................................
->   2. ................................................................
-
+>   1. jquery đơn giản hóa việc thao tác với DOM xử lý sự kiện, hiệu ứng, và tương tác AJAX so với javaScript thuần làm cho việc code nhanh và dễ hơn.
+>   2.jQuery giúp các tính năng này hoạt động nhất quán trên nhiều trình duyệt khác nhau, nên coder không phải lo về khác biệt giữa trình duyệt .
 ---
-
 ### 6.2. Tự đánh giá \& định hướng
 
-> 1. Sau buổi lab, em tò mò nhất về phần nào của JavaScript/DOM?
+> 1. Sau buổi lab, em tò mò nhất về phần nào của JavaScript/DOM? em tò mò nhất về DOM và cách JavaScript tương tác với html đặc biệt là thay đổi nội dung, màu sắc, thêm xóa phần tử
 > 2. Em muốn tự làm thêm tính năng gì trên trang web (vd: bộ đếm, đổi theme, pop-up, mini game, …)?
+pop-ip thông báo chào người dùng, bộ đếm số lần click,..
 > 3. Em đánh giá mức độ hiểu của mình về:
->    - Biến \& kiểu dữ liệu: [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
->    - If/else \& hàm:       [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
->    - DOM \& sự kiện:       [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
+>    - Biến \& kiểu dữ liệu: [ ] Chưa hiểu  [ v] Tạm ổn  [ ] Khá rõ
+>    - If/else \& hàm:       [ ] Chưa hiểu  [ v] Tạm ổn  [ ] Khá rõ
+>    - DOM \& sự kiện:       [ ] Chưa hiểu  [ v] Tạm ổn  [ ] Khá rõ
 
 ---
 
