@@ -1,0 +1,80 @@
+/* ...existing code... */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 30px;
+}
+
+form {
+    background: #fff;
+    padding: 18px 24px 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 6px 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    margin-right: 12px;
+    width: 180px;
+    font-size: 15px;
+}
+
+button {
+    padding: 6px 18px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #125ea2;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+thead tr {
+    background: #1976d2;
+    color: #fff;
+}
+
+tbody tr:nth-child(even):not(.yeu) {
+    background: #f2f8fc;
+}
+
+tbody tr:hover {
+    background: #e3f2fd;
+}
+
+#thongke {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #1976d2;
+}
+
+.yeu {
+    background-color: #ffe066 !important;
+    color: #b85c00;
+    font-weight: bold;
+}
+/* ...existing code... */

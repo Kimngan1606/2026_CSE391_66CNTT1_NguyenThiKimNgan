@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Quản Lý Sinh Viên</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <form>
+        <label for="hten">Họ Tên:</label>
+        <input type ="text"id="hten"name="hten"value="">
+        <br><label for="diem">Điểm: </label>
+        <input type ="number"id="diem"name="diem"value="">
+        <br><button type="button" id="them">Thêm</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Họ Tên</td>
+                <td id="sortDiem">Điểm</td>
+                <td>Xếp Loại</td>
+                <td>Thao Tác</td>
+            </tr>
+        </thead>
+        <tbody id="ds">
+        </tbody>
+    </table>
+    <p id="thongke"></p>
+    <input type="text" id="timkiem" placeholder="Tìm kiếm theo tên...">
+    <select id="loc">
+        <option value="all">Tất cả</option>
+        <option value="Giỏi">Giỏi</option>
+        <option value="Khá">Khá</option>
+        <option value="Trung bình">Trung bình</option>
+        <option value="Yếu">Yếu</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>

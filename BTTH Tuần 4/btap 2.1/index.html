@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="style.css">
+<form id="registerForm">
+<label>Họ và tên</label>
+<input type="text" id="fullname" maxlength="50">
+<div class="field-row">
+  <span id="fullnameCount" class="charCount">0/50</span>
+  <span class="error" id="fullnameError"></span>
+</div>
+
+<label>Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+<label>Số điện thoại</label>
+<input type="text" id="phone">
+<span class="error" id="phoneError"></span>
+
+<label>Mật khẩu</label>
+<div class="password-row">
+  <input type="password" id="password">
+  <button type="button" id="togglePassword" aria-label="Hiển thị mật khẩu">👁</button>
+</div>
+<div class="password-strength">
+  <div id="passwordStrengthBar" class="strength-bar"></div>
+  <span id="passwordStrengthText" class="strength-text">&nbsp;</span>
+</div>
+<span class="error" id="passwordError"></span>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<span class="error" id="confirmError"></span>
+
+<label>Giới tính</label>
+<input type="radio" name="gender" value="nam"> Nam
+<input type="radio" name="gender" value="nu"> Nữ
+<span class="error" id="genderError"></span>
+
+<label>
+<input type="checkbox" id="terms"> Tôi đồng ý điều khoản
+</label>
+<span class="error" id="termsError"></span>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+<script src="script.js"></script>
+<div id="success"></div>

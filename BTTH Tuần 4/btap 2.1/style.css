@@ -1,0 +1,96 @@
+.error{
+color:red;
+font-size:13px;
+display:block;
+margin-bottom:8px;
+}
+
+input.errorInput{
+border:1px solid red;
+}
+
+input.validInput{
+border:1px solid green;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.charCount {
+  font-size: 13px;
+  color: #555;
+}
+
+.password-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.password-row input {
+  flex: 1;
+}
+
+#togglePassword {
+  background: #eee;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+#togglePassword:hover {
+  background: #ddd;
+}
+
+.password-strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.strength-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.2s ease;
+}
+
+.strength-bar.weak::after {
+  width: 33%;
+  background: #d32f2f;
+}
+
+.strength-bar.medium::after {
+  width: 66%;
+  background: #fbc02d;
+}
+
+.strength-bar.strong::after {
+  width: 100%;
+  background: #388e3c;
+}
+
+.strength-text {
+  font-size: 13px;
+  color: #555;
+}
